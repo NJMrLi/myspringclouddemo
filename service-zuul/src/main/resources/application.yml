@@ -1,0 +1,18 @@
+# 应用名称
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
+server:
+  port: 7000
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: SERVICE-FEIGN
+    api-b:
+      path: /api-b/**
+      serviceId: SERVICE-RIBBON
