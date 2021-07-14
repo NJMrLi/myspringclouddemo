@@ -1,4 +1,4 @@
-package com.example.sericefeign;
+package com.example.servicefeign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +12,7 @@ public class ServiceFeignApplication {
 
     public static void main(String[] args) {
         SpringApplication.run( ServiceFeignApplication.class, args );
+        System.out.println("===============ServiceFeignApplication启动了==============");
     }
 
 }
