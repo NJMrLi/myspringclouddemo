@@ -48,7 +48,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.sericefeign.SericeFeignApplication</mainClass>
+                    <mainClass>com.example.sericefeign.ServiceFeignApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

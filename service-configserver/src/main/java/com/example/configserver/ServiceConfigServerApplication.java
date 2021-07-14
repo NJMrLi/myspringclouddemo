@@ -9,11 +9,11 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @SpringBootApplication
 @EnableConfigServer
 @RefreshScope
-public class ConfigServerApplication {
+public class ServiceConfigServerApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run( ConfigServerApplication.class, args );
+        SpringApplication.run( ServiceConfigServerApplication.class, args );
         System.out.println("==============配置中心已启动！===========");
     }
 

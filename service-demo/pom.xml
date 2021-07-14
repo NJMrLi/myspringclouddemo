@@ -39,7 +39,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.demoservice.DemoserviceApplication</mainClass>
+                    <mainClass>com.example.demoservice.ServiceDemoApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

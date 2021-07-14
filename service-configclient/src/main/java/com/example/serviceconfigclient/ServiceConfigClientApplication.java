@@ -8,10 +8,10 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RefreshScope
-public class ServiceConfigclientApplication {
+public class ServiceConfigClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run( ServiceConfigclientApplication.class, args );
+        SpringApplication.run( ServiceConfigClientApplication.class, args );
         System.out.println("============配置中心客户端已启动！=============");
     }
 
