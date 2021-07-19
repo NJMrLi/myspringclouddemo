@@ -15,6 +15,7 @@
         <module>service-zuul</module>
         <module>service-configserver</module>
         <module>service-configclient</module>
+        <module>service-springcloud-gateway</module>
     </modules>
 
     <name>demo</name>
@@ -32,11 +33,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
