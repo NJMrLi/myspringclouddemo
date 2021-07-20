@@ -1,6 +1,44 @@
+server:
+  port: 8081
 # 应用名称
 spring:
   application:
     name: SpringCloud-Gateway
+  profiles:
+    active: header_route
+
+debug: true
+
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: after_route
+          uri: http://www.baidu.com #含义是请求 http://localhost:8081/ 在After配置的时间之后都会跳转到百度页面
+          predicates:
+            - After=2021-07-20T12:41:01.417772200+08:00[Asia/Shanghai]
+  profiles: after_route
 
 
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: header_route
+          uri: http://httpbin.org
+          predicates:
+            - Header=testId, \d+
+  profiles: header_route
+
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: path_route
+          uri: http://httpbin.org
+          predicates:
+            - Path=/anything/{anything}
+  profiles: path_route
